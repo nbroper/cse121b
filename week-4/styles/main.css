@@ -1,4 +1,5 @@
 /* HTML Selectors */
+
 body {
     font-family: 'Kalam', cursive;
 }
@@ -24,6 +25,7 @@ label {
     display: inline-block;
     min-width: 120px;
     text-align: right;
+    font-weight: bold;
 }
 
 nav {
@@ -56,12 +58,15 @@ nav ul li a {
     padding: 10px;
     text-decoration: none;
 }
+
 nav ul li a:hover {
     background-color: #efefef;
     color: black;
 }
 
+
 /* Class Selectors */
+
 .active {
     background-color: white;
     color: black;
@@ -71,8 +76,12 @@ nav ul li a:hover {
     display: block;
 }
 
+
 /* ID Selectors */
-#favorite-foods, #hobbies, #places-lived {
+
+#favorite-foods,
+#hobbies,
+#places-lived {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -81,16 +90,16 @@ nav ul li a:hover {
     vertical-align: top;
 }
 
+
 /* Media Queries */
+
 @media only screen and (min-width: 32.5em) {
     nav ul {
         flex-direction: row;
     }
-    
     nav ul li:first-child {
         display: none;
     }
-
     nav ul li {
         display: inline;
         margin: 0 10px;
